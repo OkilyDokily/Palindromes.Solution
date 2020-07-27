@@ -7,10 +7,14 @@ namespace PalindromesTests
   public class PalindromesTests
   {
     [TestMethod]
-    public void IsLeapYear_NumberDivisibleByFour_True()
+    public void PalindromeTest_TestsIfPalindrome_True()
     {
-      Palindrome p = new Palindrome();
-      Assert.AreEqual(true, true);
+      Assert.AreEqual(true, Palindrome.PalindromeTest("radar"));
+    }
+    [TestMethod]
+    public void PalindromeTest_TestsIfPalindrome_False()
+    {
+      Assert.AreEqual(false, Palindrome.PalindromeTest("cabin"));
     }
 
   }
