@@ -16,7 +16,7 @@ namespace PalindromesTests
     {
       Assert.AreEqual(false, Palindrome.PalindromeTest("cabin"));
     }
-     [TestMethod]
+    [TestMethod]
      public void PalindromeTestWithoutReverse_TestsIfPalindrome_True()
     {
       Assert.AreEqual(true, Palindrome.PalindromeTest("radar"));
@@ -26,6 +26,5 @@ namespace PalindromesTests
     {
       Assert.AreEqual(false, Palindrome.PalindromeTest("cabin"));
     }
-
   }
 }
